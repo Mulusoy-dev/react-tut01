@@ -26,7 +26,7 @@ const Content = () => {
     );
 
     setItems(listItems);
-    // 'listItem' ögelerini shoppinglist adı altında bir yere kaydeder.
+    // 'listItem' ögelerini shoppinglist adı altında tarayıcıya kaydeder.
     localStorage.setItem("shoppinglist", JSON.stringify(listItems));
   };
 
