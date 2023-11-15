@@ -1,11 +1,16 @@
 import React from "react";
 
-const Header = () => {
+const Header = ({ title }) => {
   return (
     <header>
-      <h1>Shopping List</h1>
+      <h1>{title}</h1>
     </header>
   );
+};
+
+// Default Props, varsayılan olarak değer atar.
+Header.defaultProps = {
+  title: "No list",
 };
 
 export default Header;
